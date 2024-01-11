@@ -1,0 +1,24 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="pricing-config-list">
+    <h2>Pricing Configurations</h2>
+    <ul>
+      {% for pricing_config in pricing_configs %}
+        <li>
+          <a href="{% url 'pricing:pricing_config_detail' pricing_config.pk %}">{{ pricing_config.name }}</a>
+          {% if pricing_config.is_active %}
+            <span class="active-tag">(Active)</span>
+            <a href="{% url 'pricing:deactivate_pricing_config' pricing_config.pk %}" class="deactivate-link">Deactivate</a>
+          {% else %}
+            <span class="inactive-tag">(Inactive)</span>
+            <a href="{% url 'pricing:activate_pricing_config' pricing_config.pk %}" class="activate-link">Activate</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="{% url 'pricing:add_pricing_config' %}" class="btn btn-primary">Add New Configuration</a>
+  </div>
+{% endblock %}

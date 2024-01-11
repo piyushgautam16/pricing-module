@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="pricing-config-detail">
+    <h2>{{ pricing_config.name }}</h2>
+    <p class="active-status">Active: {{ pricing_config.is_active }}</p>
+    <p>Distance Base Price: {{ pricing_config.distance_base_price }}</p>
+    <p>Distance Additional Price: {{ pricing_config.distance_additional_price }}</p>
+    <p>Time Multiplier Factor: {{ pricing_config.time_multiplier_factor }}</p>
+    <p>Waiting Charges: {{ pricing_config.waiting_charges }}</p>
+
+    <div class="actions">
+      <a href="{% url 'pricing:edit_pricing_config' pricing_config.pk %}" class="btn btn-primary">Edit Configuration</a>
+      <form method="post" action="{% url 'pricing:delete_pricing_config' pk=pricing_config.pk %}" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+
+      <a href="{% url 'pricing:pricing_config_list' %}" class="btn btn-secondary">Back to List</a>
+    </div>
+
+    {% if messages %}
+      <ul class="messages">
+        {% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endblock %}

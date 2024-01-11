@@ -1,0 +1,382 @@
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/list/
+Traceback (most recent call last):
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pricing_config_detail' not found. 'pricing_config_detail' is not a valid view function or pattern name.
+"GET /api/list/ HTTP/1.1" 500 158131
+"GET /api/list/ HTTP/1.1" 200 1375
+Internal Server Error: /api/deactivate/7/
+Traceback (most recent call last):
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\pricing\pricing_module\pricing\views.py", line 51, in deactivate_pricing_config
+    return redirect('pricing_config_list')
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pricing_config_list' not found. 'pricing_config_list' is not a valid view function or pattern name.
+"GET /api/deactivate/7/ HTTP/1.1" 500 82917
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/deactivate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1373
+"GET /api/add/ HTTP/1.1" 200 1908
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/add/ HTTP/1.1" 200 2045
+"POST /api/add/ HTTP/1.1" 200 2045
+"POST /api/add/ HTTP/1.1" 200 2045
+"GET /api/list/ HTTP/1.1" 200 1494
+"GET /api/add/ HTTP/1.1" 200 1908
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+"GET /api/activate/5/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1617
+"GET /api/deactivate/5/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1615
+"GET /api/deactivate/6/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1613
+"GET /api/activate/6/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1615
+"GET /api/activate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1617
+"GET /api/deactivate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1615
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/deactivate/6/ HTTP/1.1" 302 0
+"GET /api/6/ HTTP/1.1" 200 914
+"GET /api/edit/6/ HTTP/1.1" 200 1908
+"POST /api/edit/6/ HTTP/1.1" 302 0
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+"GET /api/activate/7/ HTTP/1.1" 302 0
+"GET /api/7/ HTTP/1.1" 200 910
+"GET /api/deactivate/8/ HTTP/1.1" 302 0
+"GET /api/8/ HTTP/1.1" 200 913
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/deactivate/6/
+Traceback (most recent call last):
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\pricing\pricing_module\pricing\views.py", line 54, in deactivate_pricing_config
+    return redirect('pricing:pricing_config_list', pk=pricing_config.pk)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pricing_config_list' with keyword arguments '{'pk': 6}' not found. 1 pattern(s) tried: ['api/list/\\Z']
+"GET /api/deactivate/6/ HTTP/1.1" 500 85763
+Internal Server Error: /api/deactivate/6/
+Traceback (most recent call last):
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\pricing\pricing_module\pricing\views.py", line 54, in deactivate_pricing_config
+    return redirect('pricing:pricing_config_list', pk=pricing_config.pk)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 41, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\shortcuts.py", line 130, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\urls\resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'pricing_config_list' with keyword arguments '{'pk': 6}' not found. 1 pattern(s) tried: ['api/list/\\Z']
+"GET /api/deactivate/6/ HTTP/1.1" 500 85771
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/activate/5/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1736
+"GET /api/deactivate/5/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1734
+"GET /api/deactivate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1732
+"GET /api/activate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1734
+"GET /api/deactivate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1732
+"GET /api/activate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1734
+"GET /api/deactivate/7/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 1732
+"GET /api/add/ HTTP/1.1" 200 1908
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+C:\Users\dell\pricing\pricing_module\pricing_module\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/add/ HTTP/1.1" 200 2043
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /success/
+"GET /success/ HTTP/1.1" 404 2317
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /pricing:pricing_config_list/
+"GET /pricing:pricing_config_list/ HTTP/1.1" 404 2377
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/add/ HTTP/1.1" 302 0
+Not Found: /api/pricing_config_list/
+"GET /api/pricing_config_list/ HTTP/1.1" 404 5319
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/add/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 2337
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/9/ HTTP/1.1" 200 2426
+"POST /api/delete-pricing-config/9/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 2216
+"GET /api/8/ HTTP/1.1" 200 1464
+"GET /api/list/ HTTP/1.1" 200 2216
+"GET /api/add/ HTTP/1.1" 200 1908
+"GET /api/list/ HTTP/1.1" 200 2216
+"GET /api/add/ HTTP/1.1" 200 1908
+"POST /api/add/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 2338
+"GET /api/17/ HTTP/1.1" 200 1334
+"GET /api/pricing-form/ HTTP/1.1" 200 1693
+"POST /api/calculate-pricing/ HTTP/1.1" 200 274
+"GET /api/list/ HTTP/1.1" 200 2338
+"GET /api/deactivate/10/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 2336
+"GET /api/activate/10/ HTTP/1.1" 302 0
+"GET /api/list/ HTTP/1.1" 200 2338
+"GET /api/10/ HTTP/1.1" 200 1552
+C:\Users\dell\pricing\pricing_module\pricing_module\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /pricing/list/ HTTP/1.1" 200 2446
+"GET /pricing/deactivate/4/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 2444
+"GET /pricing/activate/4/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 2446
+Not Found: /api/pricing-form/
+"GET /api/pricing-form/ HTTP/1.1" 404 2352
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1697
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/edit/17/
+"GET /api/edit/17/ HTTP/1.1" 404 2337
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/edit/17/
+"GET /api/edit/17/ HTTP/1.1" 404 2337
+Not Found: /pricing/calculate_pricing
+"GET /pricing/calculate_pricing HTTP/1.1" 404 5604
+Not Found: /pricing/calculate_pricing
+"GET /pricing/calculate_pricing HTTP/1.1" 404 5604
+Not Found: /pricing/calculate_pricing
+"GET /pricing/calculate_pricing HTTP/1.1" 404 5604
+Not Found: /api/calculate_pricing
+"GET /api/calculate_pricing HTTP/1.1" 404 2364
+Not Found: /pricing/calculate_pricing
+"GET /pricing/calculate_pricing HTTP/1.1" 404 5604
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1701
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1701
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1701
+"GET /pricing/list/ HTTP/1.1" 200 2446
+"GET /pricing/add/ HTTP/1.1" 200 1859
+"GET /static/css/styles.css HTTP/1.1" 200 959
+"GET /pricing/add/ HTTP/1.1" 200 1655
+"GET /static/css/styles.css HTTP/1.1" 200 959
+"GET /pricing/list/ HTTP/1.1" 200 2446
+"GET /pricing/add/ HTTP/1.1" 200 1655
+Not Found: /pricing/calculate_pricing
+"GET /pricing/calculate_pricing HTTP/1.1" 404 5604
+Not Found: /pricing/calculate_pricing/
+"GET /pricing/calculate_pricing/ HTTP/1.1" 404 5607
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1701
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1701
+Forbidden: /pricing/calculate-pricing/
+"POST /pricing/calculate-pricing/ HTTP/1.1" 403 58
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1751
+"GET /static/css/styles.css HTTP/1.1" 200 1880
+Forbidden: /pricing/calculate-pricing/
+"POST /pricing/calculate-pricing/ HTTP/1.1" 403 58
+Internal Server Error: /pricing/list/
+Traceback (most recent call last):
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 479, in parse
+    self.extend_nodelist(nodelist, compiled_result, token)
+  File "C:\Users\dell\pricing\myenv\lib\site-packages\django\template\base.py", line 497, in extend_nodelist
+    token, '%r must be the first tag in the template.' % node,
+django.template.exceptions.TemplateSyntaxError: <ExtendsNode: extends 'base.html'> must be the first tag in the template.
+"GET /pricing/list/ HTTP/1.1" 500 120043
+"GET /pricing/list/ HTTP/1.1" 200 3869
+"GET /static/css/styles.css HTTP/1.1" 304 0
+"GET /pricing/deactivate/4/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 3867
+"GET /pricing/activate/4/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 3869
+"GET /pricing/add/ HTTP/1.1" 200 1859
+"POST /pricing/add/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 4102
+"GET /pricing/deactivate/18/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 4100
+"GET /pricing/18/ HTTP/1.1" 200 1659
+"GET /pricing/list/ HTTP/1.1" 200 4100
+C:\Users\dell\pricing\pricing_module\pricing\api.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+C:\Users\dell\pricing\pricing_module\pricing\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing_module\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\dell\pricing\pricing_module\pricing\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+"GET /pricing/18/ HTTP/1.1" 200 1226
+Not Found: /pricing/calculate_pricing/
+"GET /pricing/calculate_pricing/ HTTP/1.1" 404 5607
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1612
+"GET /static/css/styles.css HTTP/1.1" 200 2147
+"POST /pricing/calculate-pricing/ HTTP/1.1" 200 274
+"GET /pricing/list/ HTTP/1.1" 200 3879
+"GET /pricing/activate/6/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 3881
+"GET /pricing/deactivate/6/ HTTP/1.1" 302 0
+"GET /pricing/list/ HTTP/1.1" 200 3879
+"GET /pricing/add/ HTTP/1.1" 200 1792
+"GET /pricing/list/ HTTP/1.1" 200 3879
+Not Found: /pricing/pricing_form/
+"GET /pricing/pricing_form/ HTTP/1.1" 404 5592
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1612
+"GET /static/css/styles.css HTTP/1.1" 200 2147
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+Watching for file changes with StatReloader
+"GET /pricing/pricing-form/ HTTP/1.1" 200 1612
+"GET /static/css/styles.css HTTP/1.1" 304 0
+Forbidden: /pricing/calculate-pricing/
+"POST /pricing/calculate-pricing/ HTTP/1.1" 403 58
+"GET /pricing/list/ HTTP/1.1" 200 3879
+"POST /pricing/calculate-pricing/ HTTP/1.1" 200 274
+"POST /pricing/calculate-pricing/ HTTP/1.1" 200 275
+Bad Request: /pricing/calculate-pricing/
+Not Found: /api/calculate-pricing/
+Not Found: /api/calculate-pricing/
+"POST /api/calculate-pricing/ HTTP/1.1" 404 2368
+Not Found: /api/calculate-pricing/
+"POST /api/calculate-pricing/ HTTP/1.1" 404 2368
+"POST /pricing/calculate-pricing/ HTTP/1.1" 200 274
